@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<link href="style.css" media="all" rel="stylesheet">
+<title>Laboratorio Creativo Geppetto</title>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>  -->
+<!-- 		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script> -->
+        <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+		<script src="js/parallax.js"></script>
+		<script src="js/jquery.tools.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+       <script src="js/galleria/galleria-1.2.7.min.js"></script>
+       <script>
+   		 Galleria.loadTheme('js/galleria/themes/miniml/galleria.miniml.min.js'); 
+   		 Galleria.run('.galleria');
+   		//Galleria.run('');
+   		Galleria.configure({
+   			width:$(window).width()*0.35,
+   			height:$(window).height()*0.6,
+   		});
+   		</script>
+        
+   
+        <script type="text/javascript">
+        $(function() {
+        	  // initialize scrollable
+        	  $(".scrollable").scrollable();
+        	});
+        </script>
+        
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript">
+ function initialize() {
+  var latlng = new google.maps.LatLng(45.5296178,9.2272746);
+  var settings = {
+   zoom: 15,
+   center: latlng,
+   mapTypeControl: true,
+   mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+   navigationControl: true,
+   navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+   mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+  var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+  var companyLogo = new google.maps.MarkerImage('img/marker.png',
+			new google.maps.Size(75,90),
+			new google.maps.Point(0,0),
+			new google.maps.Point(50,50)
+		);
+  var companyPos = new google.maps.LatLng(45.5296178,9.2272746);
+  var companyMarker = new google.maps.Marker({
+      position: companyPos,
+      map: map,
+      icon: companyLogo,
+      title:"Some title"
+  });
+
+ }
+ </script>
+
+</head>
+
+<body onload="initialize()">
+ <header>
+  <h1>Laboratorio Creativo Geppetto</h1>
+  <div id="top">
+   <img id="logo" alt="Laboratorio Creativo Geppetto"
+    src="logo-dani.png"/>
+   <h3>
+    Geppetto è nato per mostrare un approccio contemporaneo
+    all'artigianato.<br /> I fili elettrici sono il suo legno, le
+    frequenze sonore i suoi chiodi, i link la sua spatola.
+   </h3>
+   <img id="lab" alt="il laboratorio" src="./img/lab3.jpg" />
+  </div>
+ </header>
+ 
+ <nav id="primary">
+    <ul>
+     <li>
+      <h4>Il Laboratorio</h4>
+      <a href="#laboratorio" class="laboratorio active">View</a>
+     </li>
+     <li>
+      <h4 style="display: none;">I Progetti</h4>
+      <a href="#progetti" class="progetti">View</a>
+     </li>
+     <li>
+      <h4 style="display: none;">I Geppetti</h4>
+      <a href="#geppetti" class="geppetti">View</a>
+     </li>
+     <li>
+      <h4 style="display: none;">I Contatti</h4>
+      <a href="#contatti" class="contatti">View</a>
+     </li>
+    </ul>
+   </nav>
+ 
+ <div style="clear:both;"><div class="sep-left"></div><div class="saw-left"></div></div>
+ 
+ <section id="laboratorio">
+  <h2 class="title-right">IL LABORATORIO</h2>
+  <div style="clear:both;">
+  <iframe class="video-gep" src="http://player.vimeo.com/video/45543438" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+  <article class="article-right"><p>Il Laboratorio Creativo Geppetto si occupa di creare una realtà innovativa nel territorio italiano, per dar vita a tutte quelle iniziative artistiche che hanno bisogno di una componente interattiva e/o incentrata sulla multimedialità per potersi sviluppare nel miglior modo possibile.</p>
+ <p> Il team si offre come appoggio per privati ed aziende nella progettazione di installazioni interattive ed oggetti, ma anche come studio di progettazione e realizzazione completamente autonomo. Concentrando le sue esperienze sul recupero di materiali e sul loro riutilizzo, trova nel ready-made e nel lo-fi i suoi punti di forza.</p>
+  <p> Noi Geppetti ci proponiamo di dare nuova vita agli oggetti ignorati della vita quotidiana e del design, integrandoli con funzioni tecnologiche e modalità alternative di interazione. Ci basiamo sulll'alta formazione specializzata che ci caratterizza e che spazia dal design del prodotto a quello grafico, dall'ingegneria informatica all'elettronica.</p></article>
+ </div>
+ </section>
+ 
+ <div style="clear:both;"><div class="sep-right"></div><div class="saw-right"></div></div>
+ 
+ <section id="progetti">
+  <h2 class="title-left">PROGETTI</h2>
+  <div class="prog-container" style="margin:0 auto; width: 90%; height:400px;">
+<!-- "previous page" action -->
+<a class="prev browse left"></a>
+ 
+<!-- root element for scrollable -->
+<div class="scrollable" id="scrollable">
+ 
+  <!-- root element for the items -->
+  <div class="items">
+ 
+    <!-- 1-5 -->
+      <div class="scroll-el">
+     <h3>LOOPSHIRT</h3>
+     <div class="full-height">
+
+     <article class="article-left-scroll"> 
+     <p><b>Descrizione: </b>Nato come lavoro ad hoc e successivamente sviluppato come progetto interno del laboratorio, Loopshirt è una maglietta interattiva pensata per performance dal vivo in cui l'artista ha la necessità di controllare eventi multimediali (audio, video) o scenici (modifiche in tempo reale dell'ambiente) dovendosi allo stesso tempo muovere liberamente nello spazio circostante. </p>
+
+<p>L'interazione avviene attraverso i 3 pulsanti in neoprene posti sulla maglietta, che tramite un microcontrollore ed un modem Bluetooth inviano segnali MIDI ad un computer adibito alla gestione degli eventi. L'alimentazione è fornita da una batteria al litio posta sulla schiena  e ricaricabile via USB.</p> 
+<p>Tutti i componenti elettronici sono attaccati al tessuto tramite bottoni metallici e quindi rimuovibili per consentire il lavaggio della maglia.</p>
+
+<p>I pulsanti hanno due funzioni ciascuno (a seconda della durata della pressione, breve o continuata), e la loro posizione è stata studiata per ottenere un utilizzo confortevole ed efficiente con entrambe le mani.</p>
+     </article>
+     <div class="galleria">
+        <img src="img/loop1.jpg" alt="loop1" data-description="Un particolare dei pulsante in neoprene: i due strati interni in tessuto conduttivo vengono a contatto durante la pressione.">
+        <img src="img/loop2.jpg" alt="loop2" data-description="I pulsanti sono collegati tramite bottoni metallici per consentire il passaggio di corrente ed ulteriormente bloccati con un strato di feltro.">
+        <img src="img/loop3.jpg" alt="loop3" data-description="Il microcontrollore ed il modem bluetooth usati per la comunicazione con il computer.">
+<!--         <img src="img/cuprum4.jpg" alt="cuprum4" data-description="Un particolare della realizzazione tecnica"> -->
+     </div>
+     </div>
+ 
+    </div>
+    
+    
+    <div class="scroll-el">
+     <h3>CUPRUM</h3>
+     <div class="full-height">
+
+     <article class="article-left-scroll">
+     <p><b>Artista: </b><a href="http://www.danieladimaro.it/">Daniela Di Maro</a></p> 
+     <p><b>Descrizione: </b>"Cuprum" è un’installazione interattiva di Daniela Di Maro frutto della ricerca sulle relazioni che intercorrono tra i processi vitali, propri dei sistemi naturali, e le opportunità intrinseche al progresso tecnologico. Le sue sperimentazioni, infatti, conducono alla forte connessione tra le dinamiche della natura e le potenzialità dovute alle tecnologie nate nell’ultimo secolo.</p>
+
+<p>Cuprum, nome scientifico del rame, non è semplicemente la rivelazione del metallo costituente l’opera, ma è l’espressione della sintesi del rapporto tra natura e tecnica; ottimo conduttore di elettricità e termico, il rame diviene il mezzo per dar vita a un circuito elettronico alimentato dalla luce e modulato dalla presenza del pubblico. L’installazione si completa con una serie di forme vegetali, ricamate dall’artista con il filo metallico, selezionate in virtù della loro duplice funzione medicamentosa/velenosa, che si animano grazie a “presenze” sonore generate dall’energia catturata dalla luce naturale.</p>
+
+<p>L’installazione è stata esposta in mostra dal 9/3/2012 al 12/4/2012  presso la <a href="http://www.dinomorraartecontemporanea.eu"><b>Galleria Dino Morra Arte Contemporanea</b></a> di Napoli.</p>
+     </article>
+     <div class="galleria">
+        <img src="img/cuprum1.jpg" alt="cuprum1" data-description="L'opera esposta presso la Galleria d'arte contemporanea Dino Morra">
+        <img src="img/cuprum2.jpg" alt="cuprum2" data-description="I ricami in rame sono realizzati a mano dall'artista">
+        <img src="img/cuprum3.jpg" alt="cuprum3" data-description="Un altro dettaglio dell'opera">
+        <img src="img/cuprum4.jpg" alt="cuprum4" data-description="Un particolare della realizzazione tecnica">
+     </div>
+     </div>
+ 
+    </div>
+ 
+    <!-- 5-10 -->
+    <div class="scroll-el">
+      <h3>IMAGINARY CORPUSCOLI</h3>
+     <div class="full-height">
+
+     <article class="article-left-scroll">
+     <p><b>Artista: </b><a href="http://eyeflux.wordpress.com/">Virginia Carlocchia</a> </p>
+     <p><b>Descrizione: </b>“Imaginary Corpuscoli” è un’installazione interattiva ideata da Virginia Carlocchia costituita da due strutture poste in luoghi diversi e collegate tra loro dalla rete internet. Ogni postazione è un dispositivo in grado di trasmettere e ricevere impulsi tattili, di modo che gli utenti potranno entrare in comunicazione tra loro introducendo l’elemento innovativo dell’interazione tangibile nella comunicazione a distanza.</p>
+
+<p>La mostra offre un’amplificazione dell’empatia che spesso le persone provano attraverso lo schermo, dove la realtà inganna il virtuale servendosene.</p>
+
+<p>Per la realizzazione tecnica sono stati utilizzati due Arduino Mega, ognuno dedito al controllo di 2 sensori di pressione e 2 motori servo, connessi tramite protocollo OSC.</p>
+<p>L'opera è stata esposta presso lo <a href="http://www.fondazionedars.it"><b>Studio D’Ars</b></a> dal 20 al 26 Settembre 2011    
+     </article>
+     <div class="galleria">
+        <img src="img/corpuscoli1.jpg" alt="corpuscoli1" data-description="L'opera in esposizione presso la Fondazione D'ars">
+        <img src="img/corpuscoli2.jpg" alt="corpuscoli2" data-description="Una delle postazioni in uso durante la mostra">
+        <img src="img/corpuscoli3.jpg" alt="corpuscoli3" data-description="L'opera insieme alla sua ideatrice, Virginia">
+     </div>
+     </div>
+    </div>
+ 
+    <!-- 10-15 -->
+    <div class="scroll-el">
+       <h3>LOL DI TEST 3</h3>    
+    </div>
+ 
+</div>
+ 
+
+</div>
+<!-- "next page" action -->
+<a class="next browse right"></a>
+</div>
+ </section>
+ 
+ <div style="clear:both;"><div class="sep-left"></div><div class="saw-left"></div></div>
+ 
+ <section id="geppetti">
+ <h2 class="title-center">I GEPPETTI</h2>
+ 
+ <div class="gep-person">
+  <div class="gep-person-img">
+   <img src="img/user.png" alt="geppo">
+  </div>
+  <div class="gep-person-info"><h3>DANIELE CIMINIERI</h3>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</div>
+ 
+ </div>
+ 
+ <div class="gep-person-right">
+  <div class="gep-person-img">
+   <img src="img/user.png" alt="geppo">
+  </div>
+  <div class="gep-person-info"><h3>LUCA FELICIANI</h3>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</div>
+ 
+ </div>
+ 
+ <div class="gep-person">
+  <div class="gep-person-img">
+   <img src="img/user.png" alt="geppo">
+  </div>
+  <div class="gep-person-info"><h3>SUSANNA PILIA</h3>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</div>
+ 
+ </div>
+ 
+ <div class="gep-person-right">
+  <div class="gep-person-img">
+   <img src="img/user.png" alt="geppo">
+  </div>
+  <div class="gep-person-info"><h3>GIANMARCO GOZZI</h3>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</div>
+ 
+ </div>
+ 
+ <div class="gep-person">
+  <div class="gep-person-img">
+   <img src="img/user.png" alt="geppo">
+  </div>
+  <div class="gep-person-info"><h3>DAVIDE TOTARO</h3>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</div>
+ 
+ </div>
+ 
+ <div class="gep-person-right">
+  <div class="gep-person-img">
+   <img src="img/user.png" alt="geppo">
+  </div>
+  <div class="gep-person-info"><h3>EROS BLANCO</h3>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</div>
+ 
+ </div>
+ 
+ 
+<div class="gep-person">
+  <div class="gep-person-img">
+   <img src="img/user.png" alt="geppo">
+  </div>
+  <div class="gep-person-info"><h3>ANDREI CLODIUS</h3>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</div>
+ 
+ </div>
+ 
+ 
+ </section>
+ <div style="clear:both;"><div class="sep-right"></div><div class="saw-right"></div></div>
+ 
+ <section id="contatti">
+ <h2 class="title-left">CONTATTI</h2>
+ <div class="contatti-container">
+   <div class="contatti-text">
+     <p>La nostra sede si trova presso l'<a href="http://www.milanomet.it/"><b>HUB MILANO METROPOLI</b></a></p>
+     <h3>INDIRIZZO</h3><p>via Venezia 23 <br/>20099 Sesto San Giovanni (MI)</p> 
+     <h3>MAIL</h3><p><a href="mailto:geppettolab@gmail.com">geppettolab@gmail.com</a></p>
+     <h3>TELEFONO</h3><p>Daniele - 347 7503783<br/>Luca - 339 3767565</p>
+     <h3>SEGUICI SU</h3>
+     <div class=social-container>
+    <div class="social-icon">
+     <a href="http://www.facebook.com/LaboratorioCreativoGeppetto"><img src="img/facebook.png" alt="facebook"></a>
+    </div>
+    <div class="social-icon">
+     <a href="https://twitter.com/GeppettoLab"><img src="img/twitter.png" alt="twitter"></a>
+    </div>
+    <div class="social-icon">
+     <a href="http://www.linkedin.com/groups/Laboratorio-Creativo-Geppetto-4022256"><img src="img/linkedin.png" alt="linkedin"></a>
+    </div>
+   </div> 
+   </div>
+   <div id="map_canvas"></div>
+   </div>
+ </section>
+<footer style="margin:0 auto; width:80%;">
+Copyright &copy; 2012 Laboratorio Creativo Geppetto | via Venezia 23, 20099 Sesto San Giovanni (MI) | tel. 3477503783 - 3393767565
+</footer>
+
+</body>
+</html>
