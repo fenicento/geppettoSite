@@ -231,7 +231,7 @@ nav#primary h4 {
   /* required settings */
   position:relative;
   overflow:hidden;
-  width: 93%;
+  width: 91%;
   height:100%;
 }
 
@@ -300,7 +300,7 @@ a.disabled {
 	height:auto;
 }
 .contatti-container{
-	font-size:1.4em;
+	font-size:1.2em;
 	margin-left:7.3%;
 	margin-right:7.3%;
 }
