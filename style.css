@@ -247,6 +247,10 @@ nav#primary h4 {
   height:100%;
 }
 
+.galleria {
+	height:100%;
+}
+
 .scrollable {
     float:left;
 }
@@ -285,6 +289,8 @@ a.disabled {
 .gep-person-img {
 	width:20%;
 	float:left;
+	margin-right: 2%;
+    margin-top: 2%;
 }
 
 .gep-person-right .gep-person-img {

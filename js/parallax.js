@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$("#map_canvas").height($(window).height()*0.7);
 	$(".video-gep").width($(window).width()*0.4);
 	$(".video-gep").height($(window).width()*0.4/1.77);
-	$(".prog-container").height($(window).height()*0.8);
+	$(".prog-container").height($(window).height()*0.9);
 
 	redrawDotNav();
 	
