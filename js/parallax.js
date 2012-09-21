@@ -2,7 +2,7 @@ $(document).ready(function() {
 	
 	$(".scroll-el").width($(window).width()*0.9);
 	$("#contatti").height($(window).height()*0.895);
-	$("#map_canvas").width($(".contatti-container").width()*0.55);
+	$("#map_canvas").width($(".contatti-container").width()*0.50);
 	$("#map_canvas").height($(window).height()*0.7);
 	$(".video-gep").width($(window).width()*0.4);
 	$(".video-gep").height($(window).width()*0.4/1.77);
