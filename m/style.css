@@ -52,11 +52,8 @@ body {
 
 header h3 {
 	display:block;
-	width:80%;
-	line-height:1.1;
-	font-size:1.3em;
+	width:100%;
+	font-size:1.1em;
 	color:#fff;
-	font-style:italic;
-	font-family:serif;
 	text-align:center;
 }
