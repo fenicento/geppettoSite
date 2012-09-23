@@ -44,6 +44,11 @@ body {
 h1 {
     color: #006666;
 }
+#wood{
+	position:absolute;
+	width:20%;
+	
+}
 
 header h3 {
 	line-height:1.3;

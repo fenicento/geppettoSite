@@ -1,0 +1,62 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a{text-decoration:none; color:#8FE5F2;}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+@font-face{
+	font-family:'helvetica-neue85';
+src: url(fonts/HELVETICANEUELTCOM-HV.TTF);	
+}
+@font-face{
+	font-family:'helvetica-neue77';
+src: url(fonts/HelveticaNeueLTCom-BdCn.ttf);	
+}
+
+html {
+    overflow-y: scroll;
+    color:#fff;
+}
+body {
+    background: none repeat scroll 0 0 #006666;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    /*height: 4550px;*/
+    line-height:1.5;
+    overflow-x: hidden;
+}
+
+#logo {
+	display:block;
+	width:90%;
+	height:auto;
+	margin: 0 auto;
+	max-width:800px;
+}
+
+#logo-lateral {
+	display:block;
+	width:100%;
+	height:auto;	
+}
+
+header h3 {
+	display:block;
+	width:80%;
+	line-height:1.1;
+	font-size:1.3em;
+	color:#fff;
+	font-style:italic;
+	font-family:serif;
+	text-align:center;
+}
