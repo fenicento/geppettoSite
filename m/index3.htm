@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Laboratorio Creativo Geppetto</title>
+<link href="style.css" media="all" rel="stylesheet">
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body>
+ <header>
+  <nav id="slideMenu">
+   <div class="menu-el">
+    <div class="menu-im">
+     <img src="img/labIco.jpg" / alt="lab">
+    </div>
+    <div class="menu-txt">Il Laboratorio</div>
+   </div>
+
+   <div class="menu-el">
+    <div class="menu-im">
+     <img src="img/proIco.png" / alt="lab">
+    </div>
+    <div class="menu-txt">Progetti</div>
+   </div>
+
+   <div class="menu-el">
+    <div class="menu-im">
+     <img src="img/gepIco.png" / alt="lab">
+    </div>
+    <div class="menu-txt">I Geppetti</div>
+   </div>
+
+   <div class="menu-el">
+    <div class="menu-im">
+     <img src="img/conIco.png" / alt="lab">
+    </div>
+    <div class="menu-txt">Contatti</div>
+   </div>
+  </nav>
+  <img id="logo-lateral" alt="Laboratorio Creativo Geppetto"
+   src="img/logo-small.png" /> <a class="menuButton" id="menuButton"
+   href="#"> <img alt="Laboratorio Creativo Geppetto"
+   src="img/menu-off.png" /></a>
+
+ </header>
+ <nav class="breadcrumb">
+  <a href="index.htm">HOME</a> > I GEPPETTI
+ </nav>
+ <section>
+  <h3>I Geppetti</h3>
+<div class="geppo">
+<div class="geppo-im"><img src="./img/luca.jpg"/></div>
+<div class="geppo-txt">
+ <div class="geppo-name">Luca Feliciani</div>
+ <div class="geppo-role">Elettronica, Modellazione, realizzazione fisica di installazioni</div>
+</div>
+</div>
+
+
+<div class="geppo">
+<div class="geppo-im"><img src="./img/dave.jpg"/></div>
+<div class="geppo-txt">
+ <div class="geppo-name">Davide Totaro</div>
+ <div class="geppo-role">Design e sviluppo di sistemi interattivi, arte digitale</div>
+</div>
+</div>
+
+<div class="geppo">
+<div class="geppo-im"><img src="./img/dani.jpg"/></div>
+<div class="geppo-txt">
+ <div class="geppo-name">Daniele Ciminieri</div>
+ <div class="geppo-role">Programmazione multimediale, video making, sviluppo web</div>
+</div>
+</div>
+
+
+<div class="geppo">
+<div class="geppo-im"><img src="./img/susy.jpg"/></div>
+<div class="geppo-txt">
+ <div class="geppo-name">Susanna Pilia</div>
+ <div class="geppo-role">Grafica, Product Design</div>
+</div>
+</div>
+
+<div class="geppo">
+<div class="geppo-im"><img src="./img/jimy.jpg"/></div>
+<div class="geppo-txt">
+ <div class="geppo-name">Gianmarco Gozzi</div>
+ <div class="geppo-role">Composizione musicale, Sound Design</div>
+</div>
+</div>
+
+<div class="geppo">
+<div class="geppo-im"><img src="./img/eros.jpg"/></div>
+<div class="geppo-txt">
+ <div class="geppo-name">Eros Blanco</div>
+ <div class="geppo-role">Sviluppo di prototipi, programmazione multimediale</div>
+</div>
+</div>
+
+<div class="geppo">
+<div class="geppo-im"><img src="./img/andrei.jpg"/></div>
+<div class="geppo-txt">
+ <div class="geppo-name">Andrei Clodius</div>
+ <div class="geppo-role">Graphic e Product design, Scenario Building</div>
+</div>
+</div>
+
+ </section>
+ <a href="#logo-lateral">
+  <div class="tablink" id="menu1">
+   <div class="tabtext">
+    <div class="tabstring">Torna in cima</div>
+
+   </div>
+
+   <div class="tabimg">
+    <img src="img/upIco.png" / alt="lab">
+   </div>
+
+  </div>
+ </a>
+ <footer>
+  <div class="footer-text">&copy; 2012 Laboratorio Creativo
+   Geppetto</div>
+  <div class="footer-link">
+   <a href="http://www.geppettolab.it?m=true">Vai alla versione
+    classica</a>
+  </div>
+
+ </footer>
+ <script type="text/javascript">
+		$('#menuButton').click(function() {
+			$('#slideMenu').slideToggle('slow', function() {
+				// Animation complete.
+			});
+		});
+	</script>
+</body>
+</html>

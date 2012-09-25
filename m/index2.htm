@@ -1,18 +1,86 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Laboratorio Creativo Geppetto</title>
-    <link href="style.css" media="all" rel="stylesheet">
-    <meta name="viewport" content="width=device-width"/>
+<meta charset="utf-8" />
+<title>Laboratorio Creativo Geppetto</title>
+<link href="style.css" media="all" rel="stylesheet">
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 </head>
- 
-<body>
-<header>
- <img id="logo-lateral" alt="Laboratorio Creativo Geppetto"
-    src="img/logo-small.png"/>
-    
-    <h3>PAGINA INTERNA</h3>
 
-   </header>
+<body>
+ <header>
+ <nav id="slideMenu">
+  <div class="menu-el">
+   <div class="menu-im"> <img src="img/labIco.jpg" / alt="lab"></div>
+   <div class="menu-txt">Il Laboratorio</div>
+  </div>
+  
+  <div class="menu-el">
+   <div class="menu-im"> <img src="img/proIco.png" / alt="lab"></div>
+   <div class="menu-txt">Progetti</div>
+  </div>
+  
+  <div class="menu-el">
+   <div class="menu-im"> <img src="img/gepIco.png" / alt="lab"></div>
+   <div class="menu-txt">I Geppetti</div>
+  </div>
+  
+  <div class="menu-el">
+   <div class="menu-im"> <img src="img/conIco.png" / alt="lab"></div>
+   <div class="menu-txt">Contatti</div>
+  </div>
+ </nav>
+  <img id="logo-lateral" alt="Laboratorio Creativo Geppetto"
+   src="img/logo-small.png" />
+   <a class="menuButton" id="menuButton" href="#"> <img alt="Laboratorio Creativo Geppetto"
+   src="img/menu-off.png" /></a>
+
+ </header>
+<nav class="breadcrumb"><a href="index.htm">HOME</a> > IL LABORATORIO</nav>
+<section>
+ <h3>Il Laboratorio</h3>
+ 
+ <video width="100%" controls="controls">
+  <source src="./geplab.iphone.mp4" type="video/mp4" />
+   <source src="./geplab.webmvp8.webm" type="video/webm"/>
+  Il tuo dispositivo non supporta video in formato MP4, spiacente!
+  </video>
+   <article><p>Il Laboratorio Creativo Geppetto si occupa di creare una realtà innovativa nel territorio italiano, per dar vita a tutte quelle iniziative artistiche che hanno bisogno di una componente interattiva e/o incentrata sulla multimedialità per potersi sviluppare nel miglior modo possibile.</p>
+ <p> Il team si offre come appoggio per privati ed aziende nella progettazione di installazioni interattive ed oggetti, ma anche come studio di progettazione e realizzazione completamente autonomo. Concentrando le sue esperienze sul recupero di materiali e sul loro riutilizzo, trova nel ready-made e nel lo-fi i suoi punti di forza.</p>
+  <p> Noi Geppetti ci proponiamo di dare nuova vita agli oggetti ignorati della vita quotidiana e del design, integrandoli con funzioni tecnologiche e modalità alternative di interazione. Ci basiamo sulll'alta formazione specializzata che ci caratterizza e che spazia dal design del prodotto a quello grafico, dall'ingegneria informatica all'elettronica.</p></article>
+ 
+ 
+</section>
+<a href="#logo-lateral">
+ <div class="tablink" id="menu1">
+    <div class="tabtext">
+     <div class="tabstring">Torna in cima</div>
+     
+    </div>
+
+    <div class="tabimg">
+     <img src="img/upIco.png" / alt="lab">
+    </div>
+    
+   </div></a>
+ <footer>
+  <div class="footer-text">&copy; 2012 Laboratorio Creativo
+   Geppetto</div>
+  <div class="footer-link">
+   <a href="http://www.geppettolab.it?m=true">Vai alla versione
+    classica</a>
+  </div>
+  
+ </footer>
+ <script type="text/javascript">
+
+$('#menuButton').click(function() {
+  $('#slideMenu').slideToggle('slow', function() {
+     // Animation complete.
+   });
+});
+ 
+  </script>
 </body>
 </html>

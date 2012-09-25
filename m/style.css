@@ -10,17 +10,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 a{text-decoration:none; color:#8FE5F2;}
 
+nav a{
+	color:#fff;
+}
+
 ol, ul {
     list-style: none outside none;
 }
 
 @font-face{
-	font-family:'helvetica-neue85';
-src: url(fonts/HELVETICANEUELTCOM-HV.TTF);	
+	font-family:'helvetica-neue';
+src: url(fonts/HELVETICANEUELTCOM-LT.TTF);	
 }
 @font-face{
-	font-family:'helvetica-neue77';
-src: url(fonts/HelveticaNeueLTCom-BdCn.ttf);	
+	font-family:'helvetica-neue85';
+src: url(fonts/HELVETICANEUELTCOM-HV.TTF);	
 }
 
 html {
@@ -29,11 +33,7 @@ html {
 }
 body {
     background: none repeat scroll 0 0 #006666;
-    font-family: Arial,sans-serif;
-    font-size: 14px;
-    /*height: 4550px;*/
-    line-height:1.5;
-    overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 #logo {
@@ -45,15 +45,202 @@ body {
 }
 
 #logo-lateral {
+	float:left;
 	display:block;
-	width:100%;
+	width:70%;
+	max-width:400px;
 	height:auto;	
 }
 
-header h3 {
+.menuButton{
+	display:block;
+	width:25%;
+	max-width:100px;
+	float:right;
+	margin-right:3.5%;
+	text-align:center;
+	height:100%;
+	position:relative;
+	top:-1px;
+}
+.menuButton img{
+	width:90%;
+	height:auto;
+}
+
+section h3 {
+	font-family:'helvetica-neue';
 	display:block;
 	width:100%;
 	font-size:1.1em;
-	color:#fff;
+	color:#f7941e;
+	margin-left:2%;
+	font-weight: bold;
+}
+
+.tablink{
+	width:100%;
+	clear:both;
+	height:4em;
+	margin-bottom:2%;
+}
+.tabtext{
+	width:75%;
+	height:100%;
+	float:left;
+}
+.tabstring{
+	font-weight:bold;
+	margin-left:2%;
+	line-height:4em;
+	font-size: 1em;
+	font-family: 'helvetica-neue';
+}
+.tabtitle{
+	margin-left:2%;
+	margin-top:0.3em;
+	font-size: 1.4em;
+	font-family: 'helvetica-neue85';
+}
+.tabsubtitle{
+	margin-left:2%;
+	font-size:1em;
+	font-family: 'helvetica-neue';
+}
+.tabimg{
+	margin-right:2%;
+	width:23%;
+	text-align:right;
+	float:right;
+}
+.tabimg img {
+	width:auto;
+	max-height:70px;
+	height:2.2em;
+	margin-top:0.8em;
+}
+#menu1{
+	background-color:#0c7478;
+}
+#menu2{
+	background-color:#288f93;
+}
+#menu3{
+	background-color:#2bacb1;
+}
+#menu4{
+	background-color:#5ec9cd;
+}
+
+footer {
+	border-top:1px solid #5ec9cd;
+	padding:3% 0;
+	background-color:#0e4244;
+	font-size:0.8em;
+	width:100%;
+	text-indent: 2%;
+}
+footer a {
+	color:#f7941e;
+}
+section{
+	display:block;
+	width:100%;
+	clear:both;
+	margin-top:0.5em;
+	margin-bottom:6%;
+}
+header{
+	overflow:hidden;
+	margin-bottom:1em;
+}
+.breadcrumb{
+	font-size: 0.8em;
+	margin-left:2%;
+}
+
+#slideMenu{
+	display:none;
+	overflow:hidden;
+	background-color:#5ec9cd;
+	width:98%;
+	border:1px solid #288f93;
+	border-radius:5px; 
+	margin:0 auto;
+	background-image: linear-gradient(top, rgb(89,170,207) 2%, rgb(94,201,205) 51%);
+background-image: -o-linear-gradient(top, rgb(89,170,207) 2%, rgb(94,201,205) 51%);
+background-image: -moz-linear-gradient(top, rgb(89,170,207) 2%, rgb(94,201,205) 51%);
+background-image: -webkit-linear-gradient(top, rgb(89,170,207) 2%, rgb(94,201,205) 51%);
+background-image: -ms-linear-gradient(top, rgb(89,170,207) 2%, rgb(94,201,205) 51%);
+}
+.menu-el{
+	width:48%;
+	margin-left:0.8%;
 	text-align:center;
+	float:left;
+	margin:0.5em 0 0.5em 0.8%;
+}
+.menu-im{
+	width:100%;
+	height:3em;
+}
+.menu-im img{
+	height:80%;
+	width:auto;
+	max-height:69px;
+	max-width:69px;
+}
+.menu-txt{
+	width:100%;
+	clear:both;
+}
+video{
+	margin-top:0.5em;
+	padding:2em 0;
+	background-color:black;
+}
+
+article{
+	margin-top:0.5em;
+	overflow:hidden;
+	width:96%;
+	font-size: 0.9em;
+	margin:0 auto;
+}
+article p{
+	margin-top:1em;
+}
+
+.geppo {
+	margin-top:0.5em;
+	width:100%;
+	height:5em;
+	background-color:#2bacb1;
+}
+.geppo-im{
+	height:100%;
+	float:left;
+}
+.geppo-im img{
+	height:100%;
+	width:auto;
+}
+.geppo-txt{
+	height:100%;
+	width:68%;
+	float:left;
+	border-left:3px solid #006666;
+}
+.geppo-name{
+	color:#fff;
+	margin-top:0.3em;
+	margin-left:2%;
+	font-size: 1.3em;
+	font-family: 'helvetica-neue85';
+}
+.geppo-role{
+	margin-left:2%;
+	margin-top:0.2em;
+	font-size:0.8em;
+	color:#d1f5fa;
 }
