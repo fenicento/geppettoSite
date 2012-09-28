@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Laboratorio Creativo Geppetto</title>
+<link href="../style.css" media="all" rel="stylesheet">
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push([ '_setAccount', 'UA-35058718-1' ]);
+ _gaq.push([ '_setDomainName', 'geppettolab.it' ]);
+ _gaq.push([ '_trackPageview' ]);
+
+ (function() {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+    : 'http://www')
+    + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+<script type="application/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/vaschetta.js"></script>
+<script type="text/javascript">
+ function loaded() {
+  var vaschetta_main_container = document
+    .getElementsByClassName("vaschetta_wrapper")[0];
+  if (vaschetta_main_container) {
+   initVaschetta();
+  }
+ }
+ window.addEventListener('load', loaded, false);
+</script>
+</head>
+
+<body>
+ <header>
+  <nav id="slideMenu">
+   <div class="menu-el">
+    <div class="menu-im">
+     <a href="../laboratorio.htm"><img src="../img/labIco.jpg" / alt="lab"></a>
+    </div>
+    <div class="menu-txt">Il Laboratorio</div>
+   </div>
+
+   <div class="menu-el">
+    <div class="menu-im">
+     <a href="../progetti.htm"><img src="../img/proIco.png" / alt="lab"></a>
+    </div>
+    <div class="menu-txt">Progetti</div>
+   </div>
+
+   <div class="menu-el">
+    <div class="menu-im">
+     <a href="../geppetti.htm"><img src="../img/gepIco.png" / alt="lab"></a>
+    </div>
+    <div class="menu-txt">I Geppetti</div>
+   </div>
+
+   <div class="menu-el">
+    <div class="menu-im">
+     <a href="../contatti.htm"><img src="../img/conIco.png" / alt="lab"></a>
+    </div>
+    <div class="menu-txt">Contatti</div>
+   </div>
+  </nav>
+  <img id="logo-lateral" alt="Laboratorio Creativo Geppetto"
+   src="../img/logo-small.png" /> <a class="menuButton" id="menuButton"
+   href="#"> <img alt="Laboratorio Creativo Geppetto"
+   src="../img/menu-off.png" /></a>
+
+ </header>
+ <nav class="breadcrumb">
+  <a href="../index.htm">HOME</a> > <a href="../progetti.htm">PROGETTI</a> > LA CASA SU MARTE
+ </nav>
+ 
+ <section>
+  <h3>La casa su Marte</h3>
+  
+ <div class="vaschetta_wrapper">
+  
+  <div class="scroller-wrapper">
+  
+   <ul id="thelist" class="scroller-content"> 
+ 
+    <li class="vaschetta_item"><img height="800px" width="1024px"
+     alt="Laboratorio Creativo Geppetto" src="casa/casa1.jpg" /> 
+  
+    <li class="vaschetta_item"><img height="800px" width="1024px"
+     alt="Laboratorio Creativo Geppetto" src="casa/casa2.jpg" /> 
+     
+    <li class="vaschetta_item"><img height="800px" width="1024px"
+     alt="Laboratorio Creativo Geppetto" src="casa/casa3.jpg" /> 
+    
+    <li class="vaschetta_item"><img height="800px" width="1024px"
+     alt="Laboratorio Creativo Geppetto" src="casa/casa4.jpg" />
+    
+    <li class="vaschetta_item"><img height="800px" width="1024px"
+     alt="Laboratorio Creativo Geppetto" src="casa/casa6.jpg" />
+     </li>
+ 
+  </ul>
+ 
+ 
+</div>
+ 
+ </div>
+ <div class="galnav">
+  <div id="prev" class="vaschetta_freccia_sx">
+  <img alt="prev" src="../img/arrowL.png" /></div>
+
+  <div id="next" class="vaschetta_freccia_dx">
+  <img alt="next" src="../img/arrowR.png" />
+  </div>
+</div>
+
+
+ <article class="article-left-scroll">
+     <p><b>Designer: </b><a href="http://www.searif.com/">Francesco Bocola</a></p>
+      <p><b>Sito ufficiale: </b><a href="http://www.lacasasumarte.it">La casa su Marte</a></p>
+     <p><b>Descrizione: </b>Questa installazione immersiva progettata da Francesco Bocola esplora i confini dell'architettura sensoriale, spingendosi in una condizione in cui più che mai la casa è intesa come un rifugio: la vita umana su Marte.</p>
+     <p> In un contesto così estremo l'abitazione diventa l'unico spazio di sopravvivenza, un guscio che protegge il suo abitante dall'inospitalità del pianeta rosso e dall'instabilità psichica derivata dall'alienazione. Suoni, immagini e odori regolano l'equilibrio fisico e mentale dell'individuo, regolati dalla temperatura corporea.</p> 
+
+<p>Noi geppetti abbiamo avuto l'arduo compito di realizzare i sistemi interattivi e le automazioni della casa (porte, luci, sensori di temperatura e diffusione di fragranze), nonché di creare e governare i contenuti multimediali in base alle condizioni nterne della sfera.</p>
+     </article>
+ 
+ </section>
+
+ 
+ <footer>
+  <div class="footer-text">&copy; 2012 Laboratorio Creativo
+   Geppetto</div>
+  <div class="footer-link">
+   <a href="http://www.geppettolab.it?m=true">Vai alla versione
+    classica</a>
+  </div>
+
+ </footer>
+ <script type="text/javascript">
+  $('#menuButton').click(function() {
+   $('#slideMenu').slideToggle('slow', function() {
+    // Animation complete.
+   });
+  });
+
+  $('#mapButton').click(function() {
+   $('#mapviewer').slideToggle('slow', function() {
+    // Animation complete.
+   });
+  });
+ </script>
+</body>
+</html>

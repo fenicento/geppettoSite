@@ -71,23 +71,30 @@ body {
 section h3 {
 	font-family:'helvetica-neue';
 	display:block;
-	width:100%;
-	font-size:1.1em;
+	width:98%;
+	font-size:1.3em;
 	color:#f7941e;
 	margin-left:2%;
 	font-weight: bold;
 }
 
-.tablink{
+.tablink, .tablink2{
 	width:100%;
 	clear:both;
-	height:4em;
+	min-height:4em;
 	margin-bottom:2%;
+	overflow:hidden;
+}
+.tablink2{
+	margin:0.3em 0 0 0;
 }
 .tabtext{
 	width:75%;
 	height:100%;
 	float:left;
+}
+.taballtext{
+	width:100%;
 }
 .tabstring{
 	font-weight:bold;
@@ -149,6 +156,7 @@ section{
 	clear:both;
 	margin-top:0.5em;
 	margin-bottom:6%;
+	overflow:hidden;
 }
 header{
 	overflow:hidden;
@@ -243,4 +251,101 @@ article p{
 	margin-top:0.2em;
 	font-size:0.8em;
 	color:#d1f5fa;
+}
+
+iframe{
+	display:block;
+	margin:2em 0;
+	margin:0 auto;
+}
+.address{
+	display:block;
+	margin-left:2%;
+}
+.address p{
+	margin-top:0.5em;
+}
+.social{
+	margin-top:0.3em;
+	margin-left:2%;
+	width:20%;
+	float:left;
+}
+.social img {
+	width:60%;
+	height:auto;
+	max-width:100px;
+}
+
+/*SCROLLER*/
+.vaschetta_wrapper {
+	margin-top:1em;
+    float: left;
+    width: 100%;
+    
+}
+.vaschetta_wrapper a {
+    display: block;
+}
+.vaschetta_wrapper img {
+    max-height: 100%;
+    width: auto;
+}
+
+.vaschetta_item {
+    position: relative;
+    float:left;
+    width: 100%;
+    background:url("img/tbg.png") repeat;
+    padding-top:0.5em;
+}
+
+.vaschetta_item a{
+	color:#fff;
+}
+.vaschetta_item img{
+	width:100%;
+	height:auto;
+}
+
+.vaschetta_item em{
+	display:block;
+	padding:5px 10px;
+	background:url("img/tbg.png") repeat;
+	position:absolute;
+	top:75%;
+	color:#fff !important;
+}
+
+
+.vaschetta_item h4{
+	color:#f7941e !important;
+	font-size:1.5em;
+	display:block;
+	padding:5px 10px;
+	background:url("img/tbg.png") repeat;
+	position:absolute;
+	top:58%;
+}
+.active{
+	color:#ff8800;
+}
+.galnav{
+	width:100%;
+	background:url("img/tbg.png") repeat;
+	overflow:hidden;
+}
+
+#prev, #next{
+	width:10%;
+	float:right;
+}
+#prev{
+	float:left;
+}
+
+#prev img, #next img{
+	width:100%;
+	max-width:60px;
+	height:auto;
 }
